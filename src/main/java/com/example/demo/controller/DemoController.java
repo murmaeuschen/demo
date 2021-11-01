@@ -11,8 +11,7 @@ public class DemoController {
 
     @GetMapping(value="/check")
     public EnvSystemConfig getCheckConfig(){
-        EnvSystemConfig env = new EnvSystemConfig(123L, new Date());
-
+        EnvSystemConfig env = new EnvSystemConfig(123L, new Date(), 10);
         return env;
     }
 

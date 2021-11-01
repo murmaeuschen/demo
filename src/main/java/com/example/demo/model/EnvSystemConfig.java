@@ -4,13 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class EnvSystemConfig {
+public class EnvSystemConfig implements Serializable {
 
-    public Long emloyeeNum;
-    public Date date;
+    private Long emloyeeNum;
+    private Date date;
+    private int limitHours;
 }
